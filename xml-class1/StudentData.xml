@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Students>
+  <Student>
+    <Studentnumber>10009001</Studentnumber>
+    <FirstName>Brock</FirstName>
+    <LastName>Todd</LastName>
+    <DisplayName>Brock</DisplayName>
+    <Gender>M</Gender>
+    <Address>8755 Strathearn Cr.</Address>
+    <City>Edmonton</City>
+    <ProvinceState>AB</ProvinceState>
+    <Country>CA</Country>
+    <PostalCodeZip>T6C4C5</PostalCodeZip>
+    <BirthDate></BirthDate>
+  </Student>
+
+  <Student>
+    <StudentNumber>10009009</StudentNumber>
+    <FirstName>Martin</FirstName>
+    <LastName>Stumfoll</LastName>
+    <DisplayName>Marty</DisplayName>
+    <Gender>M</Gender>
+    <Address>12715 St. Albert Tr.</Address>
+    <City>Edmonton</City>
+    <ProvinceState>AB</ProvinceState>
+    <Country>CA</Country>
+    <PostalCodeZip>T5L4H5</PostalCodeZip>
+    <Birthdate>1969-01-31T00:00:00</Birthdate>
+  </Student>
+
+
+  <Student>
+    <StudentNumber>
+      1009000  </StudentNumber>
+    <FirstName>Bob</FirstName>
+    <LastName>Bobo</LastName>
+    <DisplayName>Bobby</DisplayName>
+    <Gender>M</Gender>
+    <Address>sample</Address>
+    <City>Edmonton</City>
+    <ProvinceState>AB</ProvinceState>
+    <Country>CA</Country>
+    <PostalCodeZip>T5L1V8</PostalCodeZip>
+    <Birthdate>1969-02-28T00:00:00</Birthdate>
+  </Student>
+  
+</Students>
