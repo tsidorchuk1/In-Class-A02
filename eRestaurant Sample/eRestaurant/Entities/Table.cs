@@ -10,6 +10,11 @@ namespace eRestaurant.Entities
     {
       // in EF, by convention , if there is a property withb the same name as the class but with the suffix id , then EF will assume that this property is mapping to a primary key column on the  database tables 
        
+     public  Table()
+     {
+             Available = true;
+      }
+       
        public int TableID { get; set; }
        public byte TableNumber { get; set; }
        public bool Smoking { get; set; }

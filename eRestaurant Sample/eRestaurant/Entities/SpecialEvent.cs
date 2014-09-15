@@ -8,7 +8,14 @@ using System.Threading.Tasks;
 namespace eRestaurant.Entities
 {
    public class SpecialEvent
-    {
+   {    
+       public SpecialEvent(){
+
+           Active=true;
+
+       }
+
+   
        [Key]   // identifies this property mapping to a primary key
        public string EventCode { get; set; }
        public string Description { get; set; }
