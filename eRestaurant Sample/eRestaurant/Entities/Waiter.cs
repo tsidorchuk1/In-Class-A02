@@ -23,6 +23,8 @@ namespace eRestaurant.Entities
        public string FullName { get { return FirstName + " " + LastName; } }
 
        public virtual ICollection<Bill> Bills { get; set; }
-       
+
+
+       public string Address { get; set; }
     }
 }
