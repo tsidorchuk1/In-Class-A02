@@ -27,6 +27,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "http://localhost
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eRestaurant", "eRestaurant\eRestaurant.csproj", "{CD85335A-F29D-44C9-87E1-DEE9554ED658}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eRestaurant.Requirements", "eRestaurant.Requirements\eRestaurant.Requirements.csproj", "{3CF30EB3-F3D4-427E-AE52-01EAD0323346}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{CD85335A-F29D-44C9-87E1-DEE9554ED658}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD85335A-F29D-44C9-87E1-DEE9554ED658}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD85335A-F29D-44C9-87E1-DEE9554ED658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CF30EB3-F3D4-427E-AE52-01EAD0323346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF30EB3-F3D4-427E-AE52-01EAD0323346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF30EB3-F3D4-427E-AE52-01EAD0323346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF30EB3-F3D4-427E-AE52-01EAD0323346}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
