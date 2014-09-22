@@ -8,7 +8,7 @@
     <div data-style="bootstrap">
         <fieldset data-style="inline">
             <asp:Label ID="Label1" runat="server" Text="Select Waiter" AssociatedControlID="WaitersDropDown" />
-            <asp:DropDownList ID="WaitersDropDown" runat="server"></asp:DropDownList>
+            <asp:DropDownList ID="WaitersDropDown" runat="server" OnSelectedIndexChanged="WaitersDropDown_SelectedIndexChanged"></asp:DropDownList>
             <asp:LinkButton ID="ShowWaiter" runat="server" Text="Show Waiter"/>
         </fieldset>
 
