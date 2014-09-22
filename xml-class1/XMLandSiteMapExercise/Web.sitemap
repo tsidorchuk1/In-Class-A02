@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="eSchoolWeb"  description="eSchoolWeb">
+    <siteMapNode url="~/Default.aspx" title="Home"  description="eSchoolWeb - Learn From Home" />
+   
+    
+    <siteMapNode title="Products"  description="Hardware and Software" >
+      <siteMapNode url="~/Products/Hardware.aspx" title="Hardware" description="Hardware" />
+      <siteMapNode url="~/Products/Software.aspx" title="Software" description="Software" />
+      
+    </siteMapNode>
+    <siteMapNode title="Services"  description="Memeber Services and Support">
+      <siteMapNode url="~/Services/Consulting.aspx" title="Consulting"  description="We offer Consulting" />
+      <siteMapNode url="~/Services/Training.aspx" title="Training"  description="We offer Training" />
+     <siteMapNode url="~/Services/MemberServices/ProductDownloads.aspx" title="Product Downloads"  description="View your Product Downloads here" />
+      <siteMapNode url="~/Services/MemberServices/RegisteredProducts.aspx" title="Register Products"  description="View your Product Registrations here" /> 
+    <siteMapNode url="~/Services/Support/SupportTickets.aspx" title="Support"  description="Send a Support Ticket" />
+    
+    
+    
+    </siteMapNode>
+    
+    <siteMapNode title="About Us"  description="History, Contact Info, and Maps" >
+      <siteMapNode url="~/Contact.aspx" title="Contact" description="Location and Contact Information" />
+      <siteMapNode url="~/About.aspx" title="History" description="eRestaurant - Our History" />
+    </siteMapNode>
+    
+ 
+  
+  
+  </siteMapNode>
+</siteMap>

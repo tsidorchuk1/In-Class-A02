@@ -8,15 +8,18 @@
       <siteMapNode url="~/Staff/FrontDesk.aspx" title="Front Desk" description="Seating and Reservations" />
       <siteMapNode url="~/Staff/ServingTables.aspx" title="Tables and Waiters" description="Table Serving" />
     </siteMapNode>
-    <siteMapNode title="About Us"  description="History, Contact Info, and Maps" >
-      <siteMapNode url="~/Contact.aspx" title="Contact" description="Location and Contact Information" />
-      <siteMapNode url="~/About.aspx" title="History" description="eRestaurant - Our History" />
-    </siteMapNode>
+    
     <siteMapNode title="Admin"  description="Managerial Services">
       <siteMapNode url="~/Admin/SpecialEvents.aspx" title="Special Events"  description="Manage the Special Events for Reservations" />
       <siteMapNode url="~/Admin/ManageTables.aspx" title="Tables"  description="Manage the Restaurant Seating/Tables" />
       <siteMapNode url="~/Admin/ManageMenuItems.aspx" title="Items"  description="Manage the Menu" />
       <siteMapNode url="~/Admin/ManageWaiters.aspx" title="Waiters"  description="Staff Management" />
     </siteMapNode>
+  <siteMapNode title="About Us"  description="History, Contact Info, and Maps" >
+      <siteMapNode url="~/Contact.aspx" title="Contact" description="Location and Contact Information" />
+      <siteMapNode url="~/About.aspx" title="History" description="eRestaurant - Our History" />
+    </siteMapNode>
+  
+  
   </siteMapNode>
 </siteMap>
