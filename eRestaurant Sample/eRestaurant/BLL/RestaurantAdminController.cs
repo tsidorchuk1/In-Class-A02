@@ -2,18 +2,24 @@
 using eRestaurant.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel; // for supporting data bound controls in webforms
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace eRestaurant.BLL
 {
-   public class RestaurantAdminController
+  
+    [DataObject]
+    
+    public class RestaurantAdminController
    {
        #region Mangage Waiters
 
        #region Command
 
+
+        [DataObjectMethod(DataObjectMethodType.Insert, false)]
        public int AddWaiter(Waiter item)
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -25,6 +31,8 @@ namespace eRestaurant.BLL
            }
        }
 
+
+        [DataObjectMethod(DataObjectMethodType.Update, false)]
        public void UpdateWaiter(Waiter item)
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -37,6 +45,7 @@ namespace eRestaurant.BLL
            }
        }
 
+        [DataObjectMethod(DataObjectMethodType.Delete, false)]
        public void DeleteWaiter(Waiter item)
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -51,6 +60,7 @@ namespace eRestaurant.BLL
 
        #region Query
 
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
        public List<Waiter> ListAllWaiters()
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -59,6 +69,7 @@ namespace eRestaurant.BLL
            }
        }
 
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
        public Waiter GetWaiter(int waiterId)
        {
            using (RestaurantContext context = new RestaurantContext())

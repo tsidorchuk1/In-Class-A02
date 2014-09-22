@@ -59,18 +59,18 @@ public partial class Admin_ManageWaiters : System.Web.UI.Page
         {
             try
             {
-                int showWaiterID = int.Parse(WaitersDropDown.SelectedValue);
-                RestaurantAdminController controller = new RestaurantAdminController();
-                Waiter info = controller.GetWaiter(waiterId);
+                //int showWaiterID = int.Parse(WaitersDropDown.SelectedValue);
+                //RestaurantAdminController controller = new RestaurantAdminController();
+                //Waiter info = controller.GetWaiter(waiterId);
 
-                WaiterID.Text = info.WaiterID.ToString();
-                FirstName.Text = info.FirstName.ToString();
-                LastName.Text = info.LastName.ToString();
+                //WaiterID.Text = info.WaiterID.ToString();
+                //FirstName.Text = info.FirstName.ToString();
+                //LastName.Text = info.LastName.ToString();
                 
-                Phone.Text = info.Phone.ToString();
-                Address.Text = info.Address.ToString();
-                HireDate.Text = info.HireDate.ToShortDateString();
-                ReleaseDate.Text = info.ReleaseDate.ToString();
+                //Phone.Text = info.Phone.ToString();
+                //Address.Text = info.Address.ToString();
+                //HireDate.Text = info.HireDate.ToShortDateString();
+                //ReleaseDate.Text = info.ReleaseDate.ToString();
                
                 MessageLabel.Text = "Waiter Details found";
             }
