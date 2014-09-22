@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website(1)", "http://localhost:49529", "{AF5A0EC2-95F0-48CD-B2E1-CD6984250D11}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "http://localhost:49529", "{AF5A0EC2-95F0-48CD-B2E1-CD6984250D11}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{cd85335a-f29d-44c9-87e1-dee9554ed658}|eRestaurant.dll;{3cf30eb3-f3d4-427e-ae52-01ead0323346}|eRestaurant.Requirements.dll;"
+		ProjectReferences = "{cd85335a-f29d-44c9-87e1-dee9554ed658}|eRestaurant.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_49529"
 		Debug.AspNetCompiler.PhysicalPath = "Website\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49529\"

@@ -84,6 +84,8 @@ namespace eRestaurant.BLL
        #region Mangage Tables
       
        #region Command
+
+         [DataObjectMethod(DataObjectMethodType.Insert, false)]
        public int AddTable(Table item)
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -95,6 +97,7 @@ namespace eRestaurant.BLL
            }
        }
 
+         [DataObjectMethod(DataObjectMethodType.Update, false)]
        public void UpdateTable(Table item)
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -107,6 +110,7 @@ namespace eRestaurant.BLL
            }
        }
 
+        [DataObjectMethod(DataObjectMethodType.Delete, false)]
        public void DeleteTable(Table item)
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -121,6 +125,7 @@ namespace eRestaurant.BLL
 
        #region Query
 
+         [DataObjectMethod(DataObjectMethodType.Select, false)]
        public List<Table> ListAllTables()
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -129,6 +134,7 @@ namespace eRestaurant.BLL
            }
        }
 
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
        public Table GetTable(int tableId)
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -143,6 +149,8 @@ namespace eRestaurant.BLL
        #region Mangage Items
       
        #region Command
+
+         [DataObjectMethod(DataObjectMethodType.Insert, false)]
        public int AddItem(Item item)
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -154,6 +162,7 @@ namespace eRestaurant.BLL
            }
        }
 
+         [DataObjectMethod(DataObjectMethodType.Update, false)]
        public void UpdateItem(Item item)
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -166,6 +175,7 @@ namespace eRestaurant.BLL
            }
        }
 
+        [DataObjectMethod(DataObjectMethodType.Delete, false)]
        public void DeleteItem(Item item)
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -180,6 +190,7 @@ namespace eRestaurant.BLL
        #endregion
        #region Query
 
+         [DataObjectMethod(DataObjectMethodType.Select, false)]
        public List<Item> ListAllItems()
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -188,6 +199,7 @@ namespace eRestaurant.BLL
            }
        }
 
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
        public Item GetItem(int itemId)
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -203,17 +215,19 @@ namespace eRestaurant.BLL
        
        #region Command
 
-       public String AddSpecialEvent(SpecialEvent item)
+         [DataObjectMethod(DataObjectMethodType.Insert, false)]
+       public void AddSpecialEvent(SpecialEvent item)
        {
            using (RestaurantContext context = new RestaurantContext())
            {
                //todo Validation rules
                var added = context.SpecialEvents.Add(item);
                context.SaveChanges();
-             return added.EventCode;
+            
            }
        }
 
+         [DataObjectMethod(DataObjectMethodType.Update, false)]
        public void UpdateSpecialEvent(SpecialEvent item)
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -226,6 +240,7 @@ namespace eRestaurant.BLL
            }
        }
 
+        [DataObjectMethod(DataObjectMethodType.Delete, false)]
        public void DeleteSpecialEvent(SpecialEvent item)
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -240,6 +255,7 @@ namespace eRestaurant.BLL
        #endregion
        #region Query
 
+         [DataObjectMethod(DataObjectMethodType.Select, false)]
        public List<SpecialEvent> ListAllSpecialEvents()
        {
            using (RestaurantContext context = new RestaurantContext())
@@ -248,6 +264,7 @@ namespace eRestaurant.BLL
            }
        }
 
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
        public SpecialEvent GetSpecialEvent(String EventCode)
        {
            using (RestaurantContext context = new RestaurantContext())
