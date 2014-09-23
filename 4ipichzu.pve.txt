@@ -1,0 +1,82 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Antlr3.Runtime.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Antlr3.Runtime.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Antlr3.Runtime.pdb
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/AspNet.ScriptManager.bootstrap.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/AspNet.ScriptManager.bootstrap.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/AspNet.ScriptManager.jQuery.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/AspNet.ScriptManager.jQuery.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/EntityFramework.SqlServer.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/EntityFramework.SqlServer.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/EntityFramework.SqlServer.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/EntityFramework.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/EntityFramework.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/EntityFramework.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.FriendlyUrls.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.FriendlyUrls.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.FriendlyUrls.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.Identity.Core.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.Identity.Core.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.Identity.Core.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.Identity.EntityFramework.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.Identity.EntityFramework.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.Identity.EntityFramework.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.Identity.Owin.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.Identity.Owin.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.Identity.Owin.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.Web.Optimization.WebForms.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.AspNet.Web.Optimization.WebForms.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Host.SystemWeb.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Host.SystemWeb.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Host.SystemWeb.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.Cookies.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.Cookies.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.Cookies.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.Facebook.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.Facebook.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.Facebook.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.Google.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.Google.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.Google.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.MicrosoftAccount.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.MicrosoftAccount.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.MicrosoftAccount.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.OAuth.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.OAuth.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.OAuth.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.Twitter.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.Twitter.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.Twitter.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.Security.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Owin.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.ScriptManager.MSAjax.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.ScriptManager.MSAjax.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.ScriptManager.WebForms.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.ScriptManager.WebForms.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Web.Infrastructure.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Microsoft.Web.Infrastructure.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Newtonsoft.Json.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Newtonsoft.Json.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Newtonsoft.Json.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Owin.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/Owin.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/System.Web.Optimization.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/System.Web.Optimization.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/System.Web.Optimization.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/System.Web.Providers.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/System.Web.Providers.dll.refresh
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/System.Web.Providers.xml
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/WebGrease.dll
+#	new file:   xml-class1/XMLandSiteMapExercise/bin/WebGrease.dll.refresh
+#
+
