@@ -4,32 +4,27 @@
        <div class="row col-md-12">
         <h1>Manage Special Events <span class="glyphicon glyphicon-glass"></span></h1>
     </div>
-    <asp:ListView ID="ListView1" runat="server" DataSourceID="SpecialEventDataSource" InsertItemPosition="LastItem">
-        <%--<AlternatingItemTemplate>
-            <span style="">EventCode:
-                <asp:Label Text='<%# Eval("EventCode") %>' runat="server" ID="EventCodeLabel" /><br />
-                Description: 
-                <asp:Label Text='<%# Eval("Description") %>' runat="server" ID="DescriptionLabel" /><br />
-                <asp:CheckBox Checked='<%# Eval("Active") %>' runat="server" ID="ActiveCheckBox" Enabled="false" Text="Active" /><br />
-                Reservations:
-                <asp:Label Text='<%# Eval("Reservations") %>' runat="server" ID="ReservationsLabel" /><br />
-                <asp:Button runat="server" CommandName="Edit" Text="Edit" ID="EditButton" />
-                <asp:Button runat="server" CommandName="Delete" Text="Delete" ID="DeleteButton" />
-                <br />
-                <br />
-            </span>
-        </AlternatingItemTemplate>--%>
+    <asp:ListView ID="ListView1" runat="server" DataSourceID="SpecialEventDataSource" InsertItemPosition="LastItem" DataKeyNames="EventCode">
+      
         <EditItemTemplate>
-            <span style="">EventCode:
-                <asp:TextBox Text='<%# Bind("EventCode") %>' runat="server" ID="EventCodeTextBox" /><br />
+            <div style="">
+                <asp:LinkButton runat="server" CommandName="Update" Text="Update" ID="UpdateButton" />
+                 &nbsp;&nbsp;
+                <asp:LinkButton runat="server" CommandName="Cancel" Text="Cancel" ID="CancelButton" />
+                
+                &nbsp;&nbsp;&nbsp;
+                EventCode:
+                <asp:TextBox Text='<%# Bind("EventCode") %>' runat="server" ID="EventCodeTextBox" />
                 Description:
-                <asp:TextBox Text='<%# Bind("Description") %>' runat="server" ID="DescriptionTextBox" /><br />
-                <asp:CheckBox Checked='<%# Bind("Active") %>' runat="server" ID="ActiveCheckBox" Text="Active" /><br />
-                Reservations:
-                <asp:TextBox Text='<%# Bind("Reservations") %>' runat="server" ID="ReservationsTextBox" /><br />
-                <asp:Button runat="server" CommandName="Update" Text="Update" ID="UpdateButton" /><asp:Button runat="server" CommandName="Cancel" Text="Cancel" ID="CancelButton" /><br />
-                <br />
-            </span>
+                <asp:TextBox Text='<%# Bind("Description") %>' runat="server" ID="DescriptionTextBox" />
+                <asp:CheckBox Checked='<%# Bind("Active") %>' runat="server" ID="ActiveCheckBox" Text="Active" />
+               <%-- Reservations:
+                <asp:TextBox Text='<%# Bind("Reservations") %>' runat="server" ID="ReservationsTextBox" />--%>
+                
+                
+                
+              
+            </div>
         </EditItemTemplate>
         <EmptyDataTemplate>
             <span>No data was returned.</span>
