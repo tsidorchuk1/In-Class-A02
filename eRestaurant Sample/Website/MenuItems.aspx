@@ -4,8 +4,30 @@
     <div class="row col-md-12">
         <h1>Our Menu</h1>
 
-       <!-- Todo : add repeater with menu items-->
+        <asp:Repeater ID="MenuItemRepeater" runat="server" DataSourceID="MenuItemDataSource">
+       
+             <ItemTemplate>
+<div>
+            <%# ((decimal)Eval("CurrentPrice")).ToString("C") %>
+            &mdash;
+            <%# Eval("Description") %>
+            &mdash;
+             <%# Eval("Category.Description") %>
+            &mdash;
+             <%# Eval("Calories") %> Calories
 
+</div>
+        </ItemTemplate>
+            <SeparatorTemplate>
+                <hr />
+            </SeparatorTemplate>
+        
+        
+        </asp:Repeater>
+
+        <!-- Todo : add repeater with menu items-->
+
+        <asp:ObjectDataSource runat="server" ID="MenuItemDataSource" OldValuesParameterFormatString="original_{0}" SelectMethod="ListMenuItems" TypeName="eRestaurant.BLL.MenuController"></asp:ObjectDataSource>
     </div>
 
 
