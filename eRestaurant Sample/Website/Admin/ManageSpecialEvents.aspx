@@ -7,49 +7,54 @@
     <asp:ListView ID="ListView1" runat="server" DataSourceID="SpecialEventDataSource" InsertItemPosition="LastItem" DataKeyNames="EventCode">
       
         <EditItemTemplate>
-            <div style="">
-                <asp:LinkButton runat="server" CommandName="Update" Text="Update" ID="UpdateButton" />
+            <span style="">
+               
+                
+                
+                 <asp:LinkButton runat="server" CommandName="Update" Text="Update" ID="UpdateButton" >Update <span class="glyphicon glyphicon-arrow-up"></span></asp:LinkButton>
                  &nbsp;&nbsp;
-                <asp:LinkButton runat="server" CommandName="Cancel" Text="Cancel" ID="CancelButton" />
-                
+                <asp:LinkButton runat="server" CommandName="Cancel" Text="Cancel" ID="CancelButton" >Cancel <span class="glyphicon glyphicon-ban-circle"></span></asp:LinkButton>
+                 
                 &nbsp;&nbsp;&nbsp;
-                EventCode:
-                <asp:TextBox Text='<%# Bind("EventCode") %>' runat="server" ID="EventCodeTextBox" />
-                Description:
-                <asp:TextBox Text='<%# Bind("Description") %>' runat="server" ID="DescriptionTextBox" />
                 <asp:CheckBox Checked='<%# Bind("Active") %>' runat="server" ID="ActiveCheckBox" Text="Active" />
-               <%-- Reservations:
-                <asp:TextBox Text='<%# Bind("Reservations") %>' runat="server" ID="ReservationsTextBox" />--%>
-                
+                &mdash;
+                <asp:Label ID="Label5" runat="server" AssociatedControlID="EventCodeTextBox" CssClass="control-label">Event Code</asp:Label>
+               
+                <asp:TextBox Text='<%# Bind("EventCode") %>' runat="server" ID="EventCodeTextBox" />
+               &nbsp;
+                &mdash;
+                <asp:Label ID="Label6" runat="server" AssociatedControlID="DescriptionTextBox" CssClass="control-label">Description</asp:Label>
+                <asp:TextBox Text='<%# Bind("Description") %>' runat="server" ID="DescriptionTextBox" />
+               
+           
                 
                 
               
-            </div>
+            </span>
         </EditItemTemplate>
         <EmptyDataTemplate>
             <span>No data was returned.</span>
         </EmptyDataTemplate>
         <InsertItemTemplate>
             <span style="">
-                 <asp:LinkButton runat="server" CommandName="Insert" Text="Insert" ID="InsertButton" >Insert <span class="glphicon glypyicon-plus"></span></asp:LinkButton>
-                &nbsp;&nbsp;
-                <asp:LinkButton runat="server" CommandName="Cancel" Text="Clear" ID="CancelButton" >Clear <span class="glyphicon glyphicon-refresh"></span></asp:LinkButton>
+                 <asp:LinkButton runat="server" CommandName="Insert" Text="Insert" ID="InsertButton" >Insert <span class="glyphicon glyphicon-plus"></span></asp:LinkButton>
+                &nbsp;
+               <asp:LinkButton runat="server" CommandName="Cancel" Text="Clear" ID="CancelButton" >Clear <span class="glyphicon glyphicon-refresh"></span></asp:LinkButton>
 
-                 &nbsp;&nbsp; &nbsp;&nbsp;
+                 &nbsp;&nbsp; &nbsp;
                 <asp:CheckBox Checked='<%# Bind("Active") %>' runat="server" ID="ActiveCheckBox" Text="Active" />
                 &mdash;
               <asp:Label ID="Label3" runat="server" AssociatedControlID="EventCodeTextBox" CssClass="control-label">Event Code</asp:Label>
               
                   <asp:TextBox Text='<%# Bind("EventCode") %>' runat="server" ID="EventCodeTextBox" />
-                &mdash;
-                Description:
+            
+                 &mdash;
+               
                 <asp:Label ID="Label4" runat="server" AssociatedControlID="DescriptionTextBox" CssClass="control-label">Description</asp:Label>
 
                 <asp:TextBox Text='<%# Bind("Description") %>' runat="server" ID="DescriptionTextBox" />
                 
-               <%-- Reservations:
-                <asp:TextBox Text='<%# Bind("Reservations") %>' runat="server" ID="ReservationsTextBox" />--%>
-               
+            
             </span>
         </InsertItemTemplate>
         <ItemTemplate>
@@ -62,12 +67,12 @@
                 &mdash;
                 <asp:Label ID="Label1" runat="server" AssociatedControlID="EventCodeLabel" CssClass="control-label">Event Code</asp:Label>
                 <asp:Label Text='<%# Eval("EventCode") %>' runat="server" ID="EventCodeLabel" />
-                &mdash;
+              
+                 &mdash;
                 <asp:Label ID="Label2" runat="server" AssociatedControlID="DescriptionLabel" CssClass="control-label">Description</asp:Label>
                 <asp:Label Text='<%# Eval("Description") %>' runat="server" ID="DescriptionLabel" />
                
-               <%-- Reservations:
-                <asp:Label Text='<%# Eval("Reservations") %>' runat="server" ID="ReservationsLabel" /><br />--%>
+            
                 
                 
             </div>
@@ -79,20 +84,7 @@
             </fieldset>
            
         </LayoutTemplate>
-       <%-- <SelectedItemTemplate>
-            <span style="">EventCode:
-                <asp:Label Text='<%# Eval("EventCode") %>' runat="server" ID="EventCodeLabel" /><br />
-                Description:
-                <asp:Label Text='<%# Eval("Description") %>' runat="server" ID="DescriptionLabel" /><br />
-                <asp:CheckBox Checked='<%# Eval("Active") %>' runat="server" ID="ActiveCheckBox" Enabled="false" Text="Active" /><br />
-                Reservations:
-                <asp:Label Text='<%# Eval("Reservations") %>' runat="server" ID="ReservationsLabel" /><br />
-                <asp:Button runat="server" CommandName="Edit" Text="Edit" ID="EditButton" />
-                <asp:Button runat="server" CommandName="Delete" Text="Delete" ID="DeleteButton" />
-                <br />
-                <br />
-            </span>
-        </SelectedItemTemplate>--%>
+     
     </asp:ListView>
 
 
