@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,8 @@ namespace eRestaurant.Entities
       }
        
        public int TableID { get; set; }
+       [Required(ErrorMessage = "Table Number is required")]
+       [Range(1, 25, ErrorMessage = "Table Number must be a positive number")]
        public byte TableNumber { get; set; }
        public bool Smoking { get; set; }
        public int Capacity { get; set; }
