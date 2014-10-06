@@ -4,6 +4,8 @@
     <siteMapNode url="~/Default.aspx" title="Home"  description="eRestaurant - Simple-Tasty-Elegant" />
     <siteMapNode url="~/MenuItems.aspx" title="Our Menu" descritpion="eRestaurant Menu Items" />
     <siteMapNode url="~/Reservations.aspx" title="Reservations"  description="Reservations" />
+    
+      <siteMapNode url="~/Admin/ReservationsBySpecialEvent.aspx" title="Reservations by Special Event" description="Reservations by Special Event" />
     <siteMapNode title="Staff"  description="Front Desk, Waiters, and Kitchen Staff" >
       <siteMapNode url="~/Staff/KitchenOrders.aspx" title="Kitchen Orders" description="Kitchen Ordering Queue" />
       <siteMapNode url="~/Staff/FrontDesk.aspx" title="Front Desk" description="Seating and Reservations" />
