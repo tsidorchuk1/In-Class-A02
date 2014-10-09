@@ -14,6 +14,7 @@
       <siteMapNode url="~/About.aspx" title="History" description="eRestaurant - Our History" />
     </siteMapNode>
     <siteMapNode title="Admin"  description="Managerial Services">
+      <siteMapNode url="~/Admin/ItemsByMenuCategory.aspx" title="Items by Menu Category" description="View the items by menu category" />
       <siteMapNode url="~/Admin/ReservationsBySpecialEvent.aspx" title="Reservations By Special Events"  description="View the reservations by special event" />
       <siteMapNode url="~/Admin/ManageSpecialEvents.aspx" title="Special Events"  description="Manage the Special Events for Reservations" />
       <siteMapNode url="~/Admin/ManageTables.aspx" title="Tables"  description="Manage the Restaurant Seating/Tables" />

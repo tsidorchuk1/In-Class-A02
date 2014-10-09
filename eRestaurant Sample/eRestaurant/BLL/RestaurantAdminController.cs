@@ -264,5 +264,51 @@ namespace eRestaurant.BLL
             }
         }
         #endregion
+
+
+        #region Ad-Hoc
+
+
+
+
+
+        //[DataObjectMethod(DataObjectMethodType.Select, false)]
+        //public List<MenuCategory> ListMenuCategories()
+        //{
+        //    using (var context = new RestaurantContext())
+        //    {
+        //        return context.Items.Include(x => x.Category).ToList();
+
+        //    }
+        //}
+        
+   
+        
+        
+        
+        
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<MenuCategory> MenuCategoriesbyItem(string itemId)
+        {
+
+            using (var context = new RestaurantContext())
+            {
+                var data = from item in context.MenuCategories
+                           where item.Description == itemId
+                           select item;
+                return data.ToList();
+            }
+        
+        }
+        
+        
+        
+        
+        
+        #endregion
+
+
+
+
     }
 }

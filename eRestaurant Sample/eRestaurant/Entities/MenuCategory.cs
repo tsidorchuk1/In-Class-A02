@@ -15,6 +15,8 @@ namespace eRestaurant.Entities
 
 
         public virtual ICollection<Item> MenuItems{ get; set; }
+        
+       
     }
 
 
