@@ -2,12 +2,17 @@
 using eRestaurant.Entities;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel; // for supporting DataBound Controls in webforms
+using System.ComponentModel;                            // for supporting DataBound Controls in webforms
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;                               // needed for lambda version of .Include() method
+using eRestaurant.DAL;
 
+
+ 
 namespace eRestaurant.BLL
+
 {
     [DataObject]
     public class RestaurantAdminController
@@ -272,16 +277,15 @@ namespace eRestaurant.BLL
 
 
 
-        //[DataObjectMethod(DataObjectMethodType.Select, false)]
-        //public List<MenuCategory> ListMenuCategories()
-        //{
-        //    using (var context = new RestaurantContext())
-        //    {
-        //        return context.Items.Include(x => x.Category).ToList();
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<MenuCategory> ListMenuCategoriesbyItem()
+        {
+            using (var context = new RestaurantContext())
+            {
+                return context.MenuCategories.Include(x => x.MenuItems).ToList();
 
-        //    }
-        //}
-        
+            }
+        }       
    
         
         

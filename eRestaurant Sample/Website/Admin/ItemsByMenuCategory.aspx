@@ -18,10 +18,7 @@
              <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description"></asp:BoundField>
          </Columns>
      </asp:GridView>
-     <asp:ObjectDataSource runat="server" ID="ObjectDataSource1" OldValuesParameterFormatString="original_{0}" SelectMethod="MenuCategoriesbyItem" TypeName="eRestaurant.BLL.RestaurantAdminController">
-         <SelectParameters>
-             <asp:Parameter Name="itemId" Type="String"></asp:Parameter>
-         </SelectParameters>
+     <asp:ObjectDataSource runat="server" ID="ObjectDataSource1" OldValuesParameterFormatString="original_{0}" SelectMethod="ListMenuCategoriesbyItem" TypeName="eRestaurant.BLL.RestaurantAdminController">
      </asp:ObjectDataSource>
  </div>
 </asp:Content>
