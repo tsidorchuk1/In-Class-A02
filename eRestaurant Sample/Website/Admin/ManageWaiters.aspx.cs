@@ -17,7 +17,7 @@ public partial class Admin_ManageWaiters : System.Web.UI.Page
         {
             try
             {
-                PopulateCurrentWaiter();
+                AddWaiter();
 
             }
             catch (Exception ex)
@@ -30,17 +30,25 @@ public partial class Admin_ManageWaiters : System.Web.UI.Page
 
     }
 
-    private void PopulateCurrentWaiter()
+    private void AddWaiter()
     {
-       
-        // populate waiter list
-        RestaurantAdminController controller = new RestaurantAdminController();
-        List<Waiter> waiters = controller.ListAllWaiters();
-        WaitersDropDown.DataSource = waiters;
-        WaitersDropDown.DataTextField = "FullName";
-        WaitersDropDown.DataValueField = "WaiterID";
-        WaitersDropDown.DataBind();
-        WaitersDropDown.Items.Insert(0, "[Select a Waiter]");
+
+        Waiter person = new Waiter()
+        {
+            FirstName = FirstName.Text,
+            LastName = LastName.Text,
+            Address = Address.Text,
+            Phone = Phone.Text,
+            HireDate = DateTime.Parse(HireDate.Text)
+
+        };
+        DateTime temp;
+        if (DateTime.TryParse(ReleaseDate.Text, out temp))
+            person.ReleaseDate = temp;
+        var controller = new RestaurantAdminController();
+        person.WaiterID = controller.AddWaiter(person);
+        WaiterID.Text = person.WaiterID.ToString();
+
 
     }
 
@@ -81,5 +89,28 @@ public partial class Admin_ManageWaiters : System.Web.UI.Page
             }
 
         }
+    }
+    protected void ShowWaiter_Click(object sender, EventArgs e)
+    {
+
+    }
+    protected void Add_Click(object sender, EventArgs e)
+    {
+
+        MessageUserControl.TryRun(AddWaiter, "Waiter added", " The new waiter was successfully added");
+
+
+    }
+    protected void Update_Click(object sender, EventArgs e)
+    {
+
+    }
+    protected void Delete_Click(object sender, EventArgs e)
+    {
+
+    }
+    protected void Clear_Click(object sender, EventArgs e)
+    {
+
     }
 }
