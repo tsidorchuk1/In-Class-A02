@@ -13,7 +13,6 @@ namespace eRestaurant.BLL
    public class ReportController
     {
         [DataObjectMethod(DataObjectMethodType.Select)]
-
         public List<CategoryMenuItem> GetReportCategoryMenuItems()
         {
             using (RestaurantContext context = new RestaurantContext())
@@ -35,6 +34,34 @@ namespace eRestaurant.BLL
             }
 
 
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Select)]
+        public List<CategorizedItemSale> TotalCategorizedItemSales()
+        
+           
+
+        {
+            using (var context = new RestaurantContext())
+            {
+                var result = from info in context.BillItems
+                             orderby info.Item.Category.Description, info.Item.Description
+                             select new CategorizedItemSale
+                             {
+                                 CategoryDescription = info.Item.Category.Description,
+                                 ItemDescription = info.Item.Description,
+                                 Quantity = info.Quantity,
+                                 Price = info.SalePrice * info.Quantity,
+                                 Cost = info.UnitCost * info.Quantity
+                                
+                             };
+
+                return result.ToList();
+
+            
+            }
+        
+        
         }
 
 
