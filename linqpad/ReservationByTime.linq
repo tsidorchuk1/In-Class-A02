@@ -1,8 +1,8 @@
 <Query Kind="Program">
   <Connection>
-    <ID>4aa93dde-870a-48f3-a0de-3506489effb8</ID>
+    <ID>5063a95f-38c9-453b-8c4e-b74471715ef8</ID>
     <Persist>true</Persist>
-    <Server>sidorchuk-pc\sqlexpress</Server>
+    <Server>.</Server>
     <Database>eRestaurant</Database>
   </Connection>
 </Query>
