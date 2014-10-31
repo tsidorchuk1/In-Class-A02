@@ -1,8 +1,8 @@
 <Query Kind="Statements">
   <Connection>
-    <ID>4aa93dde-870a-48f3-a0de-3506489effb8</ID>
+    <ID>5063a95f-38c9-453b-8c4e-b74471715ef8</ID>
     <Persist>true</Persist>
-    <Server>sidorchuk-pc\sqlexpress</Server>
+    <Server>.</Server>
     <Database>eRestaurant</Database>
   </Connection>
 </Query>
@@ -56,8 +56,15 @@ var step2 = from data in step1.ToList() //to.list forces the first result set to
 				Table = data.Table,
 				Seating = data.Seating,
 				CommonBilling = from info in data.Bills.Union(data.Reservations)
-				select info
+				select new //info
+				{
 				
+					BillID = info.BillID,
+					BillTotal = info.BillItems.Sum(bi => bi.Quantity * bi.SalePrice),
+					Waiter = info.Waiter.FirstName,
+					Reservation =info.Reservation
+				
+				}
 			};
 			
 step2.Dump();
@@ -87,7 +94,18 @@ select new //seatingSummary()
 				//use a tenary expression to conditonally get a bill id (if it exists)
 				BillID = data.Taken ? //if (data.Taken)
 						 data.CommonBilling.BillID //value to use if true
-						 : (int?) null //value to use if false
-				
+						 :  // else
+						 
+						 (int?) null, //value to use if false
+						 
+						 // note: going back to step 2 to be more selective of my billing Information
+				BillTotal = data.Taken ?
+							data.CommonBilling.BillTotal : (decimal?) null,
+			
+				Waiter = data.Taken ? data.CommonBilling.Waiter : (string) null,
+				Reservation = data.Taken ? (data.CommonBilling.Reservation != null ?
+											data.CommonBilling.Reservation.CustomerName : (string) null)
+												: (string) null
+			
 			};
 	step4.Dump();
