@@ -748,7 +748,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -808,7 +807,7 @@
         </TablixRowHierarchy>
         <DataSetName>CategorizedItemDataSet</DataSetName>
         <Height>1in</Height>
-        <Width>8.97917in</Width>
+        <Width>8.97916in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -816,13 +815,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>2.19792in</Height>
+    <Height>2.25in</Height>
     <Style />
   </Body>
-  <Width>9.42708in</Width>
+  <Width>9.33333in</Width>
   <Page>
     <PageHeader>
-      <Height>1.13542in</Height>
+      <Height>0.95834in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
