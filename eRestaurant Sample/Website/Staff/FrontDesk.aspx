@@ -132,8 +132,8 @@
 
                                      <%# Item.Waiter %>
                                      <asp:Label ID ="ReservationNameLabel" runat="server"
-                                         Text='<%# "&mdash;" + Item.ReservationName %>'
-                                         Visible='<%# !string.IsNullOrEmpty(Item.ReservationName) %>' />
+                                         Text='<%# " &mdash; " + Item.Reservation %>'
+                                         Visible='<%# !string.IsNullOrEmpty(Item.Reservation) %>' />
                                  </asp:Panel>
 
 

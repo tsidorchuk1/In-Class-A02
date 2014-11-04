@@ -156,7 +156,7 @@ namespace eRestaurant.BLL
                                             data.CommonBilling.BillTotal : (decimal?)null,
 
                                 Waiter = data.Taken ? data.CommonBilling.Waiter : (string)null,
-                                ReservationName = data.Taken ? (data.CommonBilling.Reservation != null ?
+                                Reservation = data.Taken ? (data.CommonBilling.Reservation != null ?
                                                             data.CommonBilling.Reservation.CustomerName : (string)null)
                                                                 : (string)null
 
