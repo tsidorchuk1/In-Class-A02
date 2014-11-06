@@ -23,7 +23,7 @@ namespace eRestaurant.Entities
         public TimeSpan? OrderPaid { get; set; }
 
         
-        public int NumberinParty { get; set; }
+        public int NumberInParty { get; set; }
         public byte PaidStatus { get; set; }
         public int WaiterID { get; set; }
         public int? TableID { get; set; }

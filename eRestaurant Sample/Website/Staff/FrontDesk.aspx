@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="FrontDesk.aspx.cs" Inherits="Staff_FrontDesk" %>
 
+<%@ Register Src="~/UserControls/MessageUserControl.ascx" TagPrefix="uc1" TagName="MessageUserControl" %>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
        <div class="row col-md-12">
            <style type ="text/css">
@@ -7,10 +10,15 @@
                    display: inline-block;
                    vertical-align: top;
                }
+               .inline-div{
+                   display: inline;
+
+               }
            </style>
 
         <h1>Front Desk</h1>
     
+
            <div class="well">
         <h4>Mock Date/Time</h4>
                <div class="pull-right col-md-5">
@@ -44,6 +52,8 @@
  
 
     </div>
+
+           <uc1:MessageUserControl runat="server" ID="MessageUserControl" />
        
        
            <div class="pull-right col-md-5">
@@ -96,13 +106,25 @@
 
                  <asp:GridView ID="SeatingGridView" runat="server"
                      CssClass="table table-hover table-striped table-condensed"
+                      OnSelectedIndexChanging="SeatingGridView_SelectedIndexChanging"
                      ItemType="eRestaurant.Entities.DTOs.SeatingSummary" AutoGenerateColumns="False" DataSourceID="SeatingObjectDataSource">
 
 
 
                      <Columns>
                          <asp:CheckBoxField DataField="Taken" HeaderText="Taken" SortExpression="Taken" ItemStyle-HorizontalAlign="Center"></asp:CheckBoxField>
-                         <asp:BoundField DataField="Table" HeaderText="Table" SortExpression="Table"></asp:BoundField>
+                        <%-- <asp:BoundField DataField="Table" HeaderText="Table" SortExpression="Table"></asp:BoundField>--%>
+                         <asp:TemplateField>
+                             <ItemTemplate>
+                                 <asp:Label ID="TableNumber" runat="server" Text="<%# Item.Table %>" />
+
+                             </ItemTemplate>
+
+
+
+                         </asp:TemplateField>
+
+
 
                          <asp:BoundField DataField="Seating" HeaderText="Seating" SortExpression="Seating"></asp:BoundField>
                          <asp:TemplateField>
@@ -115,11 +137,12 @@
                                      placeholder="# people"></asp:TextBox>
                              <span class="input-group-addon">
                                  <asp:DropDownList ID="WaiterList" runat="server" CssClass="selectpicker"
-                                     AppendDataBoundItems="true">
+                                     AppendDataBoundItems="true" DataSourceID="WaiterDataSource" DataTextField="FullName" DataValueField="WaiterID">
                                      <asp:ListItem Value="0">[select a waiter]</asp:ListItem>
 
 
                                  </asp:DropDownList>
+                                 <asp:ObjectDataSource runat="server" ID="WaiterDataSource" OldValuesParameterFormatString="original_{0}" SelectMethod="ListAllWaiters" TypeName="eRestaurant.BLL.RestaurantAdminController"></asp:ObjectDataSource>
                              </span>
                              <span class="input-group-addon" style="width:5px;padding:0;background-color:white;"></span>
                              <asp:LinkButton ID="LinkButton1" runat="server" Text="Seat Customers" CssClass="input-group-btn" CommandName="Select"
@@ -134,8 +157,13 @@
                                      <asp:Label ID ="ReservationNameLabel" runat="server"
                                          Text='<%# " &mdash; " + Item.Reservation %>'
                                          Visible='<%# !string.IsNullOrEmpty(Item.Reservation) %>' />
-                                 </asp:Panel>
 
+                                     <asp:Panel ID="BillInfo" runat="server" CssClass="inline-div"
+                                         Visible="<%# Item.BillTotal.HasValue && Item.BillTotal.Value > 0 %>">
+                                         <asp:Label ID="Label1" runat="server" 
+                                             Text='<%# string.Format(" &ndash; {0:C}", Item.BillTotal) %>' />
+                                         </asp:Panel>
+                                 </asp:Panel>
 
 
                              </ItemTemplate>
