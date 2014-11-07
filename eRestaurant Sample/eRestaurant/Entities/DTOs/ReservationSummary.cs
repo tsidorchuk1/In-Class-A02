@@ -19,5 +19,7 @@ namespace eRestaurant.Entities.DTOs
         public string Event { get; set; }
 
         public string Contact { get; set; }
+
+        public int ID { get; set; }
     }
 }

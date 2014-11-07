@@ -13,7 +13,7 @@ namespace eRestaurant.Entities.DTOs
         public int? BillID { get; set; }
         public decimal? BillTotal { get; set; }
         public string Waiter { get; set; }
-        public string Reservation { get; set; }
+        public string ReservationName { get; set; }
         public bool Taken { get; set; }
     }
 }
