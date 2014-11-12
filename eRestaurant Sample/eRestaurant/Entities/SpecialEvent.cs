@@ -10,12 +10,9 @@ namespace eRestaurant.Entities
    public class SpecialEvent
    {    
        public SpecialEvent(){
-
-           Active=true;
-
+                      Active=true;
        }
 
-   
        [Key]   // identifies this property mapping to a primary key
        [Required(ErrorMessage = "An Event Code is required (one character only)")]
        [StringLength(1, ErrorMessage = "Event Codes can only use a single-character code")]
