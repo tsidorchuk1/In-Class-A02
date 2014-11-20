@@ -6,7 +6,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
        <div class="row col-md-12">
         <h1>Manage Special Events <span class="glyphicon glyphicon-glass"></span></h1>
-    </div>
+    
 
 
     <asp:ListView ID="ListView1" runat="server" DataSourceID="SpecialEventDataSource" InsertItemPosition="LastItem" DataKeyNames="EventCode">
@@ -70,7 +70,7 @@
     </LayoutTemplate>
      
     </asp:ListView>
-
+</div>
 
     <my:MessageUserControl runat="server" ID="MessageUserControl" />
 
